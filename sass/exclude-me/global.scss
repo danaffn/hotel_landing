@@ -1,0 +1,66 @@
+html {
+  background: $bg repeat-y center / cover;
+}
+
+* {
+  font-family: $font;
+  font-weight: 400;
+  ::before {
+    font-family: $font;
+    font-weight: 400;
+  }
+  ::after {
+    font-family: $font;
+    font-weight: 400;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+  cursor: pointer;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1326px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $purple;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+}
