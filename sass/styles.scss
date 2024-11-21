@@ -5,6 +5,9 @@
 // ========================HEADER_TOP=============================
 // ========================HEADER_TOP=============================
 
+.header {
+  background: $bg;
+}
 
 .header__top-inner {
   display: flex;
@@ -35,7 +38,6 @@
 
 .header__top-nav-list-item {
   font-size: 14px;
-  line-height: 140%;
   color: #FFFFFF;
   font-weight: 250;
 }
@@ -59,9 +61,7 @@
   padding: 12px 20px;
   background: #FFFFFF;
   border-radius: 8px;
-
   font-size: 13px;
-  line-height: 140%;
   color: #1A1A1A;
 }
 
@@ -95,7 +95,6 @@
 .header__body-title {
   font-weight: 700;
   font-size: 64px;
-  line-height: 140%;
   max-width: 511px;
   margin: 40px 0;
 }
@@ -103,7 +102,6 @@
 .header__body-button {
   padding: 16px 24px;
   font-size: 18px;
-  line-height: 140%;
 }
 
 .header__body-offers-box {
@@ -123,7 +121,6 @@
 .header__body-row-title {
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   margin-bottom: 48px;
 }
 
@@ -145,13 +142,11 @@
 
 .header__body-card-title {
   font-size: 15px;
-  line-height: 140%;
 }
 
 .header__body-card-price {
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   margin: 12px 0;
   padding-left: 21px;
   position: relative;
@@ -160,7 +155,6 @@
     content: '₽';
     font-weight: 500;
     font-size: 24px;
-    line-height: 140%;
     position: absolute;
     left: 0;
     top: 50%;
@@ -180,5 +174,81 @@
   padding: 12px 20px;
   border-radius: 8px;
   font-size: 13px;
-  line-height: 140%;
+}
+
+// =============================ABOUT_US===================================
+// =============================ABOUT_US===================================
+.about {
+  background: $bg;
+}
+.blur{
+  background: $bg-blur;
+}
+.about__inner {
+  padding: 209px 0 249px;
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 64px;
+
+  >*:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 48px;
+  max-width: 856px;
+}
+
+.about__desc {
+  font-weight: 250;
+  font-size: 18px;
+}
+
+.about__button {
+  padding: 16px 24px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-size: 18px;
+  color: #1A1A1A;
+}
+
+.about__right-wrapper {}
+
+.about__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 28px 32px;
+  max-width: 376px;
+
+  img {
+    margin-bottom: 28px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+.about__right-button {
+  padding: 8px 12px;
+  background: #3D324F;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.about__card-title {
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.about__card-desc {
+  font-size: 15px;
 }

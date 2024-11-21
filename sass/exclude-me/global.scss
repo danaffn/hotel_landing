@@ -1,22 +1,21 @@
-.header {
-  background: $bg;
-}
-
 * {
   font-family: $font;
   font-weight: 400;
   color: #FFFFFF;
+  line-height: 140%;
 
   &::before {
     font-family: $font;
     font-weight: 400;
     color: #FFFFFF;
+  line-height: 140%;
   }
 
   &::after {
     font-family: $font;
     font-weight: 400;
     color: #FFFFFF;
+  line-height: 140%;
   }
 }
 
@@ -51,13 +50,6 @@ summary,
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
-}
-
-.main {
-
-  >* {
-    background: $bg $bg-blur;
-  }
 }
 
 .button {

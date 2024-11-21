@@ -27,24 +27,23 @@
   font-style: normal;
   font-display: swap;
 }
-.header {
-  background: url("/images/background.jpg") center;
-}
-
 * {
   font-family: "Stolzl", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+  line-height: 140%;
 }
 *::before {
   font-family: "Stolzl", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+  line-height: 140%;
 }
 *::after {
   font-family: "Stolzl", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+  line-height: 140%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -79,10 +78,6 @@ summary,
   height: 100%;
 }
 
-.main > * {
-  background: url("/images/background.jpg") center rgba(61, 50, 79, 0.7490196078);
-}
-
 .button {
   display: flex;
   justify-content: center;
@@ -98,6 +93,10 @@ summary,
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(6px);
   border-radius: 16px;
+}
+
+.header {
+  background: url("/images/background.jpg") center;
 }
 
 .header__top-inner {
@@ -125,7 +124,6 @@ summary,
 
 .header__top-nav-list-item {
   font-size: 14px;
-  line-height: 140%;
   color: #FFFFFF;
   font-weight: 250;
 }
@@ -149,7 +147,6 @@ summary,
   background: #FFFFFF;
   border-radius: 8px;
   font-size: 13px;
-  line-height: 140%;
   color: #1A1A1A;
 }
 
@@ -179,7 +176,6 @@ summary,
 .header__body-title {
   font-weight: 700;
   font-size: 64px;
-  line-height: 140%;
   max-width: 511px;
   margin: 40px 0;
 }
@@ -187,7 +183,6 @@ summary,
 .header__body-button {
   padding: 16px 24px;
   font-size: 18px;
-  line-height: 140%;
 }
 
 .header__body-offers-box {
@@ -206,7 +201,6 @@ summary,
 .header__body-row-title {
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   margin-bottom: 48px;
 }
 
@@ -227,13 +221,11 @@ summary,
 
 .header__body-card-title {
   font-size: 15px;
-  line-height: 140%;
 }
 
 .header__body-card-price {
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   margin: 12px 0;
   padding-left: 21px;
   position: relative;
@@ -242,7 +234,6 @@ summary,
   content: "₽";
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   position: absolute;
   left: 0;
   top: 50%;
@@ -261,5 +252,77 @@ summary,
   padding: 12px 20px;
   border-radius: 8px;
   font-size: 13px;
-  line-height: 140%;
+}
+
+.about {
+  background: url("/images/background.jpg") center;
+}
+
+.blur {
+  background: rgba(61, 50, 79, 0.7490196078);
+}
+
+.about__inner {
+  padding: 209px 0 249px;
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 64px;
+}
+.about__content > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 48px;
+  max-width: 856px;
+}
+
+.about__desc {
+  font-weight: 250;
+  font-size: 18px;
+}
+
+.about__button {
+  padding: 16px 24px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-size: 18px;
+  color: #1A1A1A;
+}
+
+.about__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 28px 32px;
+  max-width: 376px;
+}
+.about__card img {
+  margin-bottom: 28px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about__right-button {
+  padding: 8px 12px;
+  background: #3D324F;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.about__card-title {
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.about__card-desc {
+  font-size: 15px;
 }/*# sourceMappingURL=styles.css.map */
