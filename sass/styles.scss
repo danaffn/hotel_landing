@@ -40,6 +40,20 @@
   font-size: 14px;
   color: #FFFFFF;
   font-weight: 250;
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+
+  &:hover {
+    opacity: .7;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+  }
 }
 
 .header__top-right-box {
@@ -51,6 +65,23 @@
   display: flex;
   align-items: center;
   margin-right: 40px;
+
+  a {
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+  }
+
+  a:hover {
+    opacity: .7;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+  }
 
   a:first-child {
     margin-right: 32px;
@@ -184,6 +215,15 @@
 
 .blur {
   background: $bg-blur;
+  z-index: 1000;
+}
+
+.main {
+  position: relative;
+}
+
+.footer {
+  position: relative;
 }
 
 .about__inner {
@@ -284,6 +324,11 @@
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    transition: opacity .3s, background-color .3s;
+    -webkit-transition: opacity .3s, background-color .3s;
+    -moz-transition: opacity .3s, background-color .3s;
+    -ms-transition: opacity .3s, background-color .3s;
+    -o-transition: opacity .3s, background-color .3s;
 
     &-active,
     &-prev,
@@ -324,4 +369,306 @@
 
 .numbers__card-desc {
   font-size: 15px;
+}
+
+// ========================RESTAURANTS==============================
+// ========================RESTAURANTS==============================
+
+.restaurants {
+  background: $bg;
+}
+
+.restaurants__inner {
+  display: flex;
+  align-items: center;
+  padding: 209px 0 286px;
+}
+
+.restaurants__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  max-width: 596px;
+}
+
+.restaurants__list {
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.restaurants__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.restaurants__desc {
+  font-size: 16px;
+  font-weight: 250;
+}
+
+.restaurants__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.restaurants__img-box {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 24px;
+}
+
+// ============================BEACH================================
+// ============================BEACH================================
+
+.beach {
+  background: $bg;
+}
+
+.beach__inner {
+  display: flex;
+  padding: 209px 0 316px;
+}
+
+.beach__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 596px;
+  margin-right: 64px;
+}
+
+.beach__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.beach__desc {
+  font-weight: 250;
+  font-size: 16px;
+}
+
+.beach__img-box {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 107px;
+}
+
+// ============================SPA==================================
+// ============================SPA==================================
+
+.spa {
+  background: $bg;
+}
+
+.spa__inner {
+  display: flex;
+  padding: 209px 0 316px;
+}
+
+.spa__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  max-width: 596px;
+}
+
+.spa__title {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.spa__desc {
+  font-weight: 250;
+  font-size: 16px;
+  margin: 40px 0;
+}
+
+.spa__list {
+  li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.spa__list-item {
+  font-weight: 250;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    background: url('/images/spa/triangle.svg');
+    width: 11px;
+    height: 11px;
+    margin-right: 20px;
+  }
+}
+
+.spa__img-box {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 107px;
+}
+
+// ============================SPORTS================================
+// ============================SPORTS================================
+
+.sports {
+  background: $bg;
+}
+
+.sports__inner {
+  display: flex;
+  align-items: center;
+  padding: 209px 0 122px;
+}
+
+.sports__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  max-width: 596px;
+}
+
+.sports__list {
+
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.sports__list-item {}
+
+.sports__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.sports__desc {
+  font-weight: 250;
+  font-size: 16px;
+}
+
+.sports__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.sports__img-box {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 24px;
+}
+
+// =============================FOOTER===============================
+// =============================FOOTER===============================
+
+.footer {
+  background: $bg;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  padding: 209px 0 100px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 596px;
+  margin-right: 64px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.footer__address {
+  margin: 40px 0;
+}
+
+.footer__subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  a {
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+  }
+
+  a:hover {
+    opacity: .7;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+  }
+
+  img {
+    margin-right: 23px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+}
+
+.footer__list {}
+
+.footer__list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.footer__list-item-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.footer__list--nested {
+
+  li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__list-link {
+  font-weight: 250;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    background: url('/images/spa/triangle.svg');
+    width: 11px;
+    height: 11px;
+    margin-right: 20px;
+  }
+}
+
+.footer__warning {
+  font-weight: 250;
+  font-size: 14px;
+}
+
+.footer__map {
+  width: 636px;
+  height: 450px;
 }
