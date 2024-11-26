@@ -9,6 +9,10 @@
   background: $bg;
 }
 
+.header__inner {
+  padding-bottom: 100px;
+}
+
 .header__top-inner {
   display: flex;
   align-items: center;
@@ -103,7 +107,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-bottom: 100px;
   margin-top: 100px;
 }
 
@@ -162,6 +165,8 @@
     overflow: hidden;
     border-radius: 12px;
     margin-right: 28px;
+    width: 128px;
+    height: 128px;
   }
 }
 
@@ -671,4 +676,192 @@
 .footer__map {
   width: 636px;
   height: 450px;
+}
+
+// ==============================MEDIA==================================
+// ==============================MEDIA==================================
+
+// ------------------------------1100----------------------------------
+
+@media (max-width: 1100px) {
+  .header__inner {
+    padding-top: 109px;
+  }
+
+  .header__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    z-index: 1000;
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+
+    &--open {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+    }
+  }
+
+  .header__top-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3D324F;
+    width: 350px;
+    height: 100%;
+  }
+
+  .header__top-nav-list {
+    flex-direction: column;
+    align-items: center;
+
+    & li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .header__top-img-box {
+    flex-direction: column;
+
+    a:nth-child(n) {
+      margin-right: 0;
+    }
+
+    a:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .header__top-right-box {
+    flex-direction: column;
+
+    ul {
+      margin-right: 0;
+      margin-bottom: 20px;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+
+  .header__top-button {
+    padding: 20px 50px;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1100;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s;
+
+    span {
+      display: block;
+      height: 4px;
+      width: 30px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      opacity: 0.6;
+      margin: 5px 0;
+      transition: all 0.3s;
+      z-index: 1100;
+    }
+  }
+
+  .burger--follow {
+    top: 15px;
+    right: 15px;
+    box-shadow: 3px 6px 10px 0px #8d8d8d85;
+    background: #babbbcdf;
+  }
+
+  .burger--close {
+    transform: translateY(-5px);
+
+    span {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    &::before {
+      visibility: hidden;
+      transition: all 0s !important;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .burger::after,
+  .burger::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    opacity: 0.6;
+    transition: all 0.3s;
+    z-index: 1100;
+  }
+
+  // ----------------------------------------------------------------
+
+  .header__body-row {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 30px;
+
+    div[class="header__body-card card"] {
+      margin: 0;
+    }
+  }
+}
+
+// -------------------------------750----------------------------------
+
+@media (max-width: 750px) {
+  .header__body-row {
+    grid-template: repeat(3, 1fr) / 1fr;
+
+    & div{
+      max-width: 400px;
+    }
+  }
+}
+
+// -------------------------------600----------------------------------
+
+@media (max-width: 600px) {
+  .header__body-title{
+    font-size: 50px;
+  }
+}
+
+// -------------------------------450----------------------------------
+
+@media (max-width: 450px) {
+  .header__body-title{
+    font-size: 42px;
+  }
 }
