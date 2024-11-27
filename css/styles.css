@@ -398,7 +398,7 @@ summary,
   height: 547px;
 }
 .swiper-slide {
-  max-width: 416px;
+  width: 416px !important;
   background: #465476;
   opacity: 0.75;
   border-radius: 12px;
@@ -843,6 +843,26 @@ summary,
   }
   .header__body-row div[class="header__body-card card"] {
     margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .about__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .about__inner {
+    flex-direction: column;
+    padding: 150px 0 180px;
+  }
+  .about__content {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .about__card {
+    max-width: none;
+    align-items: center;
+    text-align: justify;
   }
 }
 @media (max-width: 750px) {

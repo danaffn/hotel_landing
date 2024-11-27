@@ -1,13 +1,28 @@
 $(function () {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
-    loop: true,
     centeredSlides: true,
+    loop: true,
     grabCursor: true,
-    slidesPerView: 3.5,
     mousewheel: true,
     spaceBetween: 24,
     slideToClickedSlide: true,
+    slidesPerGroup: 1,
+    slidesPerView: 'auto'
+    // breakpoints:{
+    //   400:{
+    //     slidesPerView: 'auto'
+    //   },
+    //   750:{
+    //     slidesPerView: 2
+    //   },
+    //   900:{
+    //     slidesPerView: 3
+    //   },
+    //   1400:{
+    //     slidesPerView: 3.5,
+    //   }
+    // }
   });
 
   setInterval(() => {
