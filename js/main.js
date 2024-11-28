@@ -9,20 +9,6 @@ $(function () {
     slideToClickedSlide: true,
     slidesPerGroup: 1,
     slidesPerView: 'auto'
-    // breakpoints:{
-    //   400:{
-    //     slidesPerView: 'auto'
-    //   },
-    //   750:{
-    //     slidesPerView: 2
-    //   },
-    //   900:{
-    //     slidesPerView: 3
-    //   },
-    //   1400:{
-    //     slidesPerView: 3.5,
-    //   }
-    // }
   });
 
   setInterval(() => {

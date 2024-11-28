@@ -714,6 +714,16 @@ summary,
   height: 450px;
 }
 
+@media (max-width: 1200px) {
+  .restaurants__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .restaurants__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 1100px) {
   .header__inner {
     padding-top: 109px;
@@ -872,14 +882,30 @@ summary,
   .header__body-row div {
     max-width: 400px;
   }
+  .restaurants__inner {
+    padding: 150px 0 190px;
+  }
+  .restaurants__img-box img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 600px) {
   .header__body-title {
     font-size: 50px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .header__body-title {
     font-size: 42px;
+  }
+  .numbers__slide {
+    max-width: 350px;
+  }
+  .numbers__card-title {
+    font-size: 21px;
+  }
+  .restaurants__title {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
