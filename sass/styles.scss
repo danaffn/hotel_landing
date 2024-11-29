@@ -700,9 +700,21 @@
   .restaurants__content {
     margin-right: 0;
     margin-bottom: 40px;
+    max-width: none;
   }
 
-  .restaurants__img-box {}
+  // ----------------------------------------------------------------
+
+  .sports__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sports__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
 }
 
 
@@ -861,6 +873,66 @@
       margin: 0;
     }
   }
+
+  // ----------------------------------------------------------------
+
+  .beach__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .beach__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+
+  .beach__img-box {
+    padding-top: 0;
+  }
+
+  // ----------------------------------------------------------------
+
+  .spa__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .spa__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+
+  .spa__img-box {
+    padding-top: 0;
+  }
+
+  // ----------------------------------------------------------------
+
+  .sports__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sports__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+
+  // ----------------------------------------------------------------
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
 }
 
 // -------------------------------1000----------------------------------
@@ -869,10 +941,6 @@
   .about__title {
     font-size: 40px;
   }
-
-  // -----------------------------------------------------------------
-
-
 }
 
 // -------------------------------900----------------------------------
@@ -886,6 +954,7 @@
   .about__content {
     margin-right: 0;
     margin-bottom: 30px;
+    max-width: none;
   }
 
   .about__card {
@@ -918,6 +987,55 @@
       height: auto;
     }
   }
+
+  // -----------------------------------------------------------------
+
+  .beach__inner {
+    padding: 150px 0 190px;
+  }
+
+  .beach__img-box {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // -----------------------------------------------------------------
+
+  .spa__inner {
+    padding: 150px 0 190px;
+  }
+
+  .spa__img-box {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // -----------------------------------------------------------------
+
+  .sports__inner {
+    padding: 150px 0 190px;
+  }
+
+  .sports__img-box {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // -----------------------------------------------------------------
+
+  .footer__inner {
+    padding: 150px 0 190px;
+  }
+
+  .footer__map {
+    width: 100%;
+  }
 }
 
 // -------------------------------600----------------------------------
@@ -948,6 +1066,30 @@
   // -----------------------------------------------------------------
 
   .restaurants__title {
+    font-size: 40px;
+  }
+
+  // -----------------------------------------------------------------
+
+  .beach__title {
+    font-size: 40px;
+  }
+
+  // -----------------------------------------------------------------
+
+  .spa__title {
+    font-size: 40px;
+  }
+
+  // -----------------------------------------------------------------
+
+  .sports__title {
+    font-size: 40px;
+  }
+
+  // -----------------------------------------------------------------
+
+  .footer__title {
     font-size: 40px;
   }
 }

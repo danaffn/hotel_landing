@@ -722,6 +722,16 @@ summary,
   .restaurants__content {
     margin-right: 0;
     margin-bottom: 40px;
+    max-width: none;
+  }
+  .sports__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .sports__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
   }
 }
 @media (max-width: 1100px) {
@@ -854,6 +864,48 @@ summary,
   .header__body-row div[class="header__body-card card"] {
     margin: 0;
   }
+  .beach__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .beach__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+  .beach__img-box {
+    padding-top: 0;
+  }
+  .spa__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .spa__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+  .spa__img-box {
+    padding-top: 0;
+  }
+  .sports__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .sports__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer__content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+  }
 }
 @media (max-width: 1000px) {
   .about__title {
@@ -868,6 +920,7 @@ summary,
   .about__content {
     margin-right: 0;
     margin-bottom: 30px;
+    max-width: none;
   }
   .about__card {
     max-width: none;
@@ -889,6 +942,33 @@ summary,
     width: 100%;
     height: auto;
   }
+  .beach__inner {
+    padding: 150px 0 190px;
+  }
+  .beach__img-box img {
+    width: 100%;
+    height: auto;
+  }
+  .spa__inner {
+    padding: 150px 0 190px;
+  }
+  .spa__img-box img {
+    width: 100%;
+    height: auto;
+  }
+  .sports__inner {
+    padding: 150px 0 190px;
+  }
+  .sports__img-box img {
+    width: 100%;
+    height: auto;
+  }
+  .footer__inner {
+    padding: 150px 0 190px;
+  }
+  .footer__map {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .header__body-title {
@@ -906,6 +986,18 @@ summary,
     font-size: 21px;
   }
   .restaurants__title {
+    font-size: 40px;
+  }
+  .beach__title {
+    font-size: 40px;
+  }
+  .spa__title {
+    font-size: 40px;
+  }
+  .sports__title {
+    font-size: 40px;
+  }
+  .footer__title {
     font-size: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
