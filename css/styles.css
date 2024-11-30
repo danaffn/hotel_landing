@@ -565,7 +565,7 @@ summary,
 .spa__list-item::before {
   content: "";
   display: block;
-  background: url("/images/spa/triangle.svg");
+  background: url("../images/spa/triangle.svg");
   width: 11px;
   height: 11px;
   margin-right: 20px;
@@ -698,7 +698,7 @@ summary,
 .footer__list-link::before {
   content: "";
   display: block;
-  background: url("/images/spa/triangle.svg");
+  background: url("../images/spa/triangle.svg");
   width: 11px;
   height: 11px;
   margin-right: 20px;

@@ -29,8 +29,6 @@
   }
 }
 
-.header__top-nav {}
-
 .header__top-nav-list {
   display: flex;
   align-items: center;
@@ -267,8 +265,6 @@
   color: #1A1A1A;
 }
 
-.about__right-wrapper {}
-
 .about__card {
   display: flex;
   flex-direction: column;
@@ -310,12 +306,6 @@
 .numbers__inner {
   padding: 209px 0 284px;
 }
-
-.numbers__slider-wrapper {}
-
-.numbers__slider {}
-
-.numbers__slide {}
 
 .swiper {
   height: 547px;
@@ -507,7 +497,7 @@
   &::before {
     content: '';
     display: block;
-    background: url('/images/spa/triangle.svg');
+    background: url('../images/spa/triangle.svg');
     width: 11px;
     height: 11px;
     margin-right: 20px;
@@ -547,8 +537,6 @@
     margin-bottom: 40px;
   }
 }
-
-.sports__list-item {}
 
 .sports__title {
   font-weight: 700;
@@ -633,8 +621,6 @@
   }
 }
 
-.footer__list {}
-
 .footer__list-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -661,7 +647,7 @@
   &::before {
     content: '';
     display: block;
-    background: url('/images/spa/triangle.svg');
+    background: url('../images/spa/triangle.svg');
     width: 11px;
     height: 11px;
     margin-right: 20px;
