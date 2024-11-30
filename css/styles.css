@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Stolzl";
-  src: local("Stolzl"), url("/fonts/Stolzl/Stolzl_Book.eot") format("eot"), url("/fonts/Stolzl/Stolzl_Book.woff") format("woff"), url("/fonts/Stolzl/Stolzl_Book.woff2") format("woff2");
+  src: local("Stolzl"), url("../fonts/Stolzl/Stolzl_Book.eot") format("eot"), url("../fonts/Stolzl/Stolzl_Book.woff") format("woff"), url("../fonts/Stolzl/Stolzl_Book.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Stolzl";
-  src: local("Stolzl"), url("/fonts/Stolzl/Stolzl_Regular.eot") format("eot"), url("/fonts/Stolzl/Stolzl_Regular.woff") format("woff"), url("/fonts/Stolzl/Stolzl_Regular.woff2") format("woff2");
+  src: local("Stolzl"), url("../fonts/Stolzl/Stolzl_Regular.eot") format("eot"), url("../fonts/Stolzl/Stolzl_Regular.woff") format("woff"), url("../fonts/Stolzl/Stolzl_Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Stolzl";
-  src: local("Stolzl"), url("/fonts/Stolzl/Stolzl_Medium.eot") format("eot"), url("/fonts/Stolzl/Stolzl_Medium.woff") format("woff"), url("/fonts/Stolzl/Stolzl_Medium.woff2") format("woff2");
+  src: local("Stolzl"), url("../fonts/Stolzl/Stolzl_Medium.eot") format("eot"), url("../fonts/Stolzl/Stolzl_Medium.woff") format("woff"), url("../fonts/Stolzl/Stolzl_Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Stolzl";
-  src: local("Stolzl"), url("/fonts/Stolzl/Stolzl_Bold.eot") format("eot"), url("/fonts/Stolzl/Stolzl_Bold.woff") format("woff"), url("/fonts/Stolzl/Stolzl_Bold.woff2") format("woff2");
+  src: local("Stolzl"), url("../fonts/Stolzl/Stolzl_Bold.eot") format("eot"), url("../fonts/Stolzl/Stolzl_Bold.woff") format("woff"), url("../fonts/Stolzl/Stolzl_Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -113,7 +113,7 @@ summary,
 }
 
 .header {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .header__inner {
@@ -305,7 +305,7 @@ summary,
 }
 
 .about {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .blur {
@@ -387,7 +387,7 @@ summary,
 }
 
 .numbers {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .numbers__inner {
@@ -448,7 +448,7 @@ summary,
 }
 
 .restaurants {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .restaurants__inner {
@@ -492,7 +492,7 @@ summary,
 }
 
 .beach {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .beach__inner {
@@ -526,7 +526,7 @@ summary,
 }
 
 .spa {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .spa__inner {
@@ -579,7 +579,7 @@ summary,
 }
 
 .sports {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .sports__inner {
@@ -623,7 +623,7 @@ summary,
 }
 
 .footer {
-  background: url("/images/background.jpg") center/cover;
+  background: url("../images/background.jpg") center/cover;
 }
 
 .footer__inner {
